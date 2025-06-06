@@ -20,7 +20,7 @@ function loadReviews() {
 }
 
 function handleReviewSubmit() {
-    console.log("handleReviewSubmir called");
+    console.log("handleReviewSubmit called");
 
     const userReview = {
         id: Date.now(),
@@ -41,7 +41,7 @@ function createReviewElement(review) {
     
     let newReview = document.createElement('div');
     newReview.classList.add('review-item');
-    newReview.innerHTML = 
+    newReview.innerHTML =
     `<h3>${review.title}</h3>
     <p>${review.reviewText}</p>
     <p>Rating: ${review.rating}</p>
